@@ -25,35 +25,34 @@ start_game()
 
 
 def elephant_story():
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+    print(f"\n In the heart of a lush, green {}, there lived a happy elephant named {}.")
+    print(f" She spent her days splashing in cool {} waters, playfully spraying her friends with her {}.")
+    print(f"Every morning, as the sun peeked over the {}, {} would lead her herd through the forest,")
+    print(f"trumpeting cheerful {} that echoed through the {}.")
+    print(f"The other animals adored her for her gentle {} and her infectious {}.")
+    print(f"One day, {} discovered a hidden grove filled with the sweetest {}.")
+    
     
     
 def mouse_story():
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+    print(f"In a quaint {}, there lived a speedy mouse named {}.")
+    print(f"{} was the fastest mouse in all the {}, darting through tall {} and narrow {} with incredible swiftness.")
+    print(f"Every day, {} challenged himself to new {}, always seeking a faster route or a quicker turn.")
+    print(f" One sunny afternoon, while zipping around the {}, {} noticed a distressed {} tangled in a net.")
 
 
 
 def cat_story():
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+    print(f"In a charming little {}, there lived a curious cat named {}.")
+    print(f"{} had a sleek coat of {} and bright green {} that twinkled with {}.")
+    print(f"Every day, {} would set off on grand {}, exploring every nook and cranny {} could find.")
+    print(f"One misty morning, {} stumbled upon an old, forgotten {} hidden behind a dense thicket.")
+    
 
 
 def cow_story():
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+    print(f"On a sunny {} in the countryside, there lived a funny cow named {}.")
+    print(f"{} had a knack for making everyone laugh with her silly {} and playful {}.")
+    print(f"She loved to wear a straw {} she found in the barn, tipping it with her {} in a comical greeting to anyone who passed by.")
+    print(f"One day, while the farmer was painting the {}, {} decided to join in the fun.")
+    print(f"She dipped her {} in the paint bucket and began to swipe it across the {}.")
