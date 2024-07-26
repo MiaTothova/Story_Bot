@@ -1,3 +1,5 @@
+
+# Dictionary
 word_choice = {
     'name' : ['Ella', 'Max', 'Whiskers', 'Daisy', 'Sparkle', 'Flash', 'Giggles', 'Bubbles', 'Snickers', 'Twinkle'],
     'place': ['jungle', 'amusement park','spaghetti factory', 'rollercoaster', 'library', 'spaceship', 'giant pillow forth', 'candy store', 'zoo','aquarium'],
@@ -13,6 +15,7 @@ word_choice = {
 }
 
 
+
 def start_game():
     print("Welcome to Story Bot!\n")
     print("I have 4 stories to choose from and YOU pick the words!")
@@ -22,10 +25,21 @@ def start_game():
     print("3. The Curious Cat")
     print("1. The Funny Cow")
 
+    choice = input()
+        # Calls a story function based on choices
+    if choice == "1":
+            elephant_story()
+    elif choice == "2":
+            mouse_story()
+    elif choice == "3":
+            print("Please enter a valid option! \n\n")
+            
+
 start_game()
 
 
 def elephant_story():
+    # selectItem prints selected words into the story
     name = selectItem = ('name')
     place = selectItem = ('place')
     liquid = selectItem = ('liquid')
