@@ -2,12 +2,13 @@ word_choice = {
     'name' : ['Ella', 'Max', 'Whiskers', 'Daisy', 'Sparkle', 'Flash', 'Giggles', 'Bubbles', 'Snickers', 'Twinkle'],
     'place': ['jungle', 'amusement park','spaghetti factory', 'rollercoaster', 'library', 'spaceship', 'giant pillow forth', 'candy store', 'zoo','aquarium'],
     'liquid': ['river', 'pudding', 'chocolate', 'lemonade', 'milkshake', 'raibow', 'bubble', 'glitter', 'confetti', 'jelly'],
-    'body part': ['trunk', 'tail', 'paw', 'ear', 'nose', 'hoof', 'fin', 'wing', 'antenna', 'whisker'],
-    'thing 1': ['cereal bowl', 'treasure chest', 'ocean of pudding', 'circus tent', 'popcorn cloud', 'smoothie sea', 'cotton candy sky', 'giat pizza', 'pancake stack'],
+    'body': ['trunk', 'tail', 'paw', 'ear', 'nose', 'hoof', 'fin', 'wing', 'antenna', 'whisker'],
+    'thing1': ['cereal bowl', 'treasure chest', 'ocean of pudding', 'circus tent', 'popcorn cloud', 'smoothie sea', 'cotton candy sky', 'giat pizza', 'pancake stack'],
     'sound': ['fart noises', 'chicken clucks', 'robot beeps', 'disco beats', 'alien whispers', 'rap verses', 'karaoke songs', 'banjp solos', 'quacking ducks'],
-    'thing 2': ['playgrounds', 'trees', 'sandcastles', 'ball pits', 'snow globes', 'race tracks', 'toy boxes', 'candy lands', 'swimming pools'],
+    'thing2': ['playgrounds', 'trees', 'sandcastles', 'ball pits', 'snow globes', 'race tracks', 'toy boxes', 'candy lands', 'swimming pools'],
     'action': ['dance moves', 'laugh', 'baloon animals', 'face paint', 'tickles', 'juggling', 'magic tricks', 'pranks', 'cartwheels'],
-    'food': ['marshmallows', 'glitter', 'bananas', 'rainbows', 'kites', 'ice cream cones', 'sprinkles', 'cupcakes']
+    'food': ['marshmallows', 'glitter', 'bananas', 'rainbows', 'kites', 'ice cream cones', 'sprinkles', 'cupcakes'],
+    'place2': ['horizon', 'treasure chest', 'ocean of pudding', 'pancake stack', 'giant pizza', 'circus tent', 'popcorn cloud', 'smoothie sea', 'candy sky']
     
 }
 
@@ -25,34 +26,35 @@ start_game()
 
 
 def elephant_story():
-    print(f"\n In the heart of a lush, green {}, there lived a happy elephant named {}.")
-    print(f" She spent her days splashing in cool {} waters, playfully spraying her friends with her {}.")
-    print(f"Every morning, as the sun peeked over the {}, {} would lead her herd through the forest,")
-    print(f"trumpeting cheerful {} that echoed through the {}.")
-    print(f"The other animals adored her for her gentle {} and her infectious {}.")
-    print(f"One day, {} discovered a hidden grove filled with the sweetest {}.")
+    print(f"\n In the heart of a lush, green {place}, there lived a happy elephant named {name}.")
+    print(f" She spent her days splashing in cool {liquid} waters, playfully spraying her friends with her {body}.")
+    print(f"Every morning, as the sun peeked over the {thing1}, {name} would lead her herd through the forest,")
+    print(f"trumpeting cheerful {sound} that echoed through the {thing2}.")
+    print(f"The other animals adored her for her gentle {action} and her infectious {place2}.")
+    print(f"One day, {name} discovered a hidden grove filled with the sweetest {food}.")
     
     
-    
+
+
 def mouse_story():
-    print(f"In a quaint {}, there lived a speedy mouse named {}.")
-    print(f"{} was the fastest mouse in all the {}, darting through tall {} and narrow {} with incredible swiftness.")
-    print(f"Every day, {} challenged himself to new {}, always seeking a faster route or a quicker turn.")
-    print(f" One sunny afternoon, while zipping around the {}, {} noticed a distressed {} tangled in a net.")
+    print(f"In a quaint {place}, there lived a speedy mouse named {name}.")
+    print(f"{name} was the fastest mouse in all the {place2}, darting through tall {thing2} and narrow {thing1} with incredible swiftness.")
+    print(f"Every day, {name} challenged himself to new {action}, always seeking a faster route or a quicker turn.")
+    print(f" One sunny afternoon, while zipping around the {place}, {name} noticed a distressed {liquid} tangled in a net.")
 
 
 
 def cat_story():
-    print(f"In a charming little {}, there lived a curious cat named {}.")
-    print(f"{} had a sleek coat of {} and bright green {} that twinkled with {}.")
-    print(f"Every day, {} would set off on grand {}, exploring every nook and cranny {} could find.")
-    print(f"One misty morning, {} stumbled upon an old, forgotten {} hidden behind a dense thicket.")
+    print(f"In a charming little {place}, there lived a curious cat named {name}.")
+    print(f"{name} had a sleek coat of {thing} and bright green {body} that twinkled with {food}.")
+    print(f"Every day, {name} would set off on grand {place2}, exploring every nook and cranny {name} could find.")
+    print(f"One misty morning, {name} stumbled upon an old, forgotten {thing2} hidden behind a dense thicket.")
     
 
 
 def cow_story():
-    print(f"On a sunny {} in the countryside, there lived a funny cow named {}.")
-    print(f"{} had a knack for making everyone laugh with her silly {} and playful {}.")
-    print(f"She loved to wear a straw {} she found in the barn, tipping it with her {} in a comical greeting to anyone who passed by.")
-    print(f"One day, while the farmer was painting the {}, {} decided to join in the fun.")
-    print(f"She dipped her {} in the paint bucket and began to swipe it across the {}.")
+    print(f"On a sunny {place} in the countryside, there lived a funny cow named {name}.")
+    print(f"{name} had a knack for making everyone laugh with her silly {sound} and playful {body}.")
+    print(f"She loved to wear a straw {thing} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
+    print(f"One day, while the farmer was painting the {thing2}, {name} decided to join in the fun.")
+    print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}.")
