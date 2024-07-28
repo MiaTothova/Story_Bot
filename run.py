@@ -28,28 +28,34 @@ def start_game():
     choice = input()
         # Calls a story function based on choices
     if choice == "1":
-            elephant_story()
+        elephant_story()
     elif choice == "2":
-            mouse_story()
+        mouse_story()
     elif choice == "3":
-            print("Please enter a valid option! \n\n")
+        cat_story()
+    elif choice == "4":
+        cow_story()
+    else:
+        print("Please enter a valid option! \n\n")
             
 
-start_game()
+# start_game()
+
+
 
 
 def elephant_story():
     # selectItem prints selected words into the story
-    name = selectItem = ('name')
-    place = selectItem = ('place')
-    liquid = selectItem = ('liquid')
-    body = selectItem = ('body')
-    thing1 = selectItem = ('thing1')
-    sound = selectItem = ('sound')
-    thing2 = selectItem = ('thing2')
-    action = selectItem = ('action')
-    food= selectItem = ('food')
-    place2 = selectItem = ('place2')
+    name = selectItem('name')
+    place = selectItem('place')
+    liquid = selectItem('liquid')
+    body = selectItem ('body')
+    thing1 = selectItem('thing1')
+    sound = selectItem('sound')
+    thing2 = selectItem('thing2')
+    action = selectItem('action')
+    food= selectItem('food')
+    place2 = selectItem('place2')
 
     print(f"\n In the heart of a lush, green {place}, there lived a happy elephant named {name}.")
     print(f" She spent her days splashing in cool {liquid} waters, playfully spraying her friends with her {body}.")
@@ -62,16 +68,16 @@ def elephant_story():
 
 
 def mouse_story():
-    name = selectItem = ('name')
-    place = selectItem = ('place')
-    liquid = selectItem = ('liquid')
-    body = selectItem = ('body')
-    thing1 = selectItem = ('thing1')
-    sound = selectItem = ('sound')
-    thing2 = selectItem = ('thing2')
-    action = selectItem = ('action')
-    food= selectItem = ('food')
-    place2 = selectItem = ('place2')
+    name = selectItem('name')
+    place = selectItem('place')
+    liquid = selectItem('liquid')
+    body = selectItem('body')
+    thing1 = selectItem('thing1')
+    sound = selectItem('sound')
+    thing2 = selectItem('thing2')
+    action = selectItem('action')
+    food = selectItem('food')
+    place2 = selectItem('place2')
 
     print(f"In a quaint {place}, there lived a speedy mouse named {name}.")
     print(f"{name} was the fastest mouse in all the {place2}, darting through tall {thing2} and narrow {thing1} with incredible swiftness.")
@@ -81,16 +87,16 @@ def mouse_story():
 
 
 def cat_story():
-    name = selectItem = ('name')
-    place = selectItem = ('place')
-    liquid = selectItem = ('liquid')
-    body = selectItem = ('body')
-    thing1 = selectItem = ('thing1')
-    sound = selectItem = ('sound')
-    thing2 = selectItem = ('thing2')
-    action = selectItem = ('action')
-    food= selectItem = ('food')
-    place2 = selectItem = ('place2')
+    name = selectItem('name')
+    place = selectItem('place')
+    liquid = selectItem('liquid')
+    body = selectItem('body')
+    thing1 = selectItem('thing1')
+    sound = selectItem('sound')
+    thing2 = selectItem('thing2')
+    action = selectItem('action')
+    food= selectItem('food')
+    place2 = selectItem('place2')
 
     print(f"In a charming little {place}, there lived a curious cat named {name}.")
     print(f"{name} had a sleek coat of {thing} and bright green {body} that twinkled with {food}.")
@@ -100,19 +106,22 @@ def cat_story():
 
 
 def cow_story():
-    name = selectItem = ('name')
-    place = selectItem = ('place')
-    liquid = selectItem = ('liquid')
-    body = selectItem = ('body')
-    thing1 = selectItem = ('thing1')
-    sound = selectItem = ('sound')
-    thing2 = selectItem = ('thing2')
-    action = selectItem = ('action')
-    food= selectItem = ('food')
-    place2 = selectItem = ('place2')
+    name = selectItem('name')
+    place = selectItem('place')
+    liquid = selectItem('liquid')
+    body = selectItem('body')
+    thing1 = selectItem('thing1')
+    sound = selectItem('sound')
+    thing2 = selectItem('thing2')
+    action = selectItem('action')
+    food= selectItem('food')
+    place2 = selectItem('place2')
 
     print(f"On a sunny {place} in the countryside, there lived a funny cow named {name}.")
     print(f"{name} had a knack for making everyone laugh with her silly {sound} and playful {body}.")
     print(f"She loved to wear a straw {thing} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
     print(f"One day, while the farmer was painting the {thing2}, {name} decided to join in the fun.")
     print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}.")
+
+
+start_game()
