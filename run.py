@@ -17,26 +17,30 @@ word_choice = {
 
 
 def start_game():
-    print("Welcome to Story Bot!\n")
-    print("I have 4 stories to choose from and YOU pick the words!")
-    print("Here they are: \n")
-    print("1. The Happy Elephant")
-    print("2. The Speedy Mouse")
-    print("3. The Curious Cat")
-    print("4. The Funny Cow")
+    while True:  # Start an infinite loop to show menu continuously
+        print("Welcome to Story Bot!\n")
+        print("I have 5 stories to choose from and YOU pick the words!")
+        print("Here they are: \n")
+        print("1. The Happy Elephant")
+        print("2. The Speedy Mouse")
+        print("3. The Curious Cat")
+        print("4. The Funny Cow")
+        print("5. End Game")
 
-    choice = input()
-        # Calls a story function based on choices
-    if choice == "1":
-        elephant_story()
-    elif choice == "2":
-        mouse_story()
-    elif choice == "3":
-        cat_story()
-    elif choice == "4":
-        cow_story()
-    else:
-        print("Please enter a valid option! \n\n")
+        choice = input("Choose a story by entering a number, or end the game by entering 5: ")
+        if choice == "1":
+            elephant_story()
+        elif choice == "2":
+            mouse_story()
+        elif choice == "3":
+            cat_story()
+        elif choice == "4":
+            cow_story()
+        elif choice == "5":
+            print("\n\nSee you next time!")
+            break  # Break out of the loop to end the game
+        else:
+            print("Please enter a valid option! \n\n")
             
 
 def selectItem(key):
@@ -117,11 +121,9 @@ def cat_story():
     place2 = selectItem('place2')
 
     print(f"In a charming little {place}, there lived a curious cat named {name}.")
-    print(f"{name} had a sleek coat of {thing} and bright green {body} that twinkled with {food}.")
-    print(f"Every day, {name} would set off on grand {place2}, exploring every nook and cranny {name} could find.")
+    print(f"{name} had a sleek coat and bright green eyes that twinkled with mischief.")
+    print(f"Every day, {name} would set off on grand adventures, exploring every nook and cranny {name} could find.")
     print(f"One misty morning, {name} stumbled upon an old, forgotten {thing2} hidden behind a dense thicket.")
-    
-
 
 def cow_story():
     name = selectItem('name')
@@ -137,7 +139,7 @@ def cow_story():
 
     print(f"On a sunny {place} in the countryside, there lived a funny cow named {name}.")
     print(f"{name} had a knack for making everyone laugh with her silly {sound} and playful {body}.")
-    print(f"She loved to wear a straw {thing} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
+    print(f"She loved to wear a straw {thing1} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
     print(f"One day, while the farmer was painting the {thing2}, {name} decided to join in the fun.")
     print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}.")
 
