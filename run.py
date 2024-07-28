@@ -23,7 +23,7 @@ def start_game():
     print("1. The Happy Elephant")
     print("2. The Speedy Mouse")
     print("3. The Curious Cat")
-    print("1. The Funny Cow")
+    print("4. The Funny Cow")
 
     choice = input()
         # Calls a story function based on choices
@@ -39,7 +39,25 @@ def start_game():
         print("Please enter a valid option! \n\n")
             
 
-# start_game()
+def selectItem(key):
+    items = word_choice[key]  # Get the list of items for the given key
+    max_index = len(items)  # This is the maximum index we can select
+
+    # Print the options for the user
+    print(f"Select a '{key}' from the list below by entering the corresponding number:")
+    for index, item in enumerate(items, start=1):
+        print(f"{index}. {item}")
+
+    while True:  # Start an infinite loop to keep asking until a valid input is given
+        try:
+            selection = int(input(f"Enter your choice (1-{max_index}): "))  # Ask user for input
+            if 1 <= selection <= max_index:  # Check if the selection is within the valid range
+                return items[selection - 1]  # Return the selected item
+            else:
+                print(f"Please enter a number between 1 and {max_index}.")  # Inform the user about the valid range
+        except ValueError:
+            print("Invalid input. Please enter a number.")  # Handle the case where input is not a number
+
 
 
 
