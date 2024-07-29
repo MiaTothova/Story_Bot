@@ -6,12 +6,12 @@ from colorama import Fore, Style
 word_choice = {
     'name' : ['Ella', 'Max', 'Whiskers', 'Daisy', 'Sparkle', 'Flash', 'Giggles', 'Bubbles', 'Snickers', 'Twinkle'],
     'place': ['jungle', 'amusement park','spaghetti factory', 'rollercoaster', 'library', 'spaceship', 'giant pillow forth', 'candy store', 'zoo','aquarium'],
-    'liquid': ['river', 'pudding', 'chocolate', 'lemonade', 'milkshake', 'raibow', 'bubble', 'glitter', 'confetti', 'jelly'],
+    'liquid': ['river', 'pudding', 'chocolate', 'lemonade', 'milkshake', 'rainbow', 'bubble', 'glitter', 'confetti', 'jelly'],
     'body': ['trunk', 'tail', 'paw', 'ear', 'nose', 'hoof', 'fin', 'wing', 'antenna', 'whisker'],
-    'thing1': ['cereal bowl', 'treasure chest', 'ocean of pudding', 'circus tent', 'popcorn cloud', 'smoothie sea', 'cotton candy sky', 'giat pizza', 'pancake stack'],
-    'sound': ['fart noises', 'chicken clucks', 'robot beeps', 'disco beats', 'alien whispers', 'rap verses', 'karaoke songs', 'banjp solos', 'quacking ducks'],
+    'thing1': ['cereal bowl', 'treasure chest', 'ocean of pudding', 'circus tent', 'popcorn cloud', 'smoothie sea', 'cotton candy sky', 'giant pizza', 'pancake stack'],
+    'sound': ['fart noises', 'chicken clucks', 'robot beeps', 'disco beats', 'alien whispers', 'rap verses', 'karaoke songs', 'banjo solos', 'quacking ducks'],
     'thing2': ['playgrounds', 'trees', 'sandcastles', 'ball pits', 'snow globes', 'race tracks', 'toy boxes', 'candy lands', 'swimming pools'],
-    'action': ['dance moves', 'laugh', 'baloon animals', 'face paint', 'tickles', 'juggling', 'magic tricks', 'pranks', 'cartwheels'],
+    'action': ['dance moves', 'laugh', 'balloon animals', 'face paint', 'tickles', 'juggling', 'magic tricks', 'pranks', 'cartwheels'],
     'food': ['marshmallows', 'glitter', 'bananas', 'rainbows', 'kites', 'ice cream cones', 'sprinkles', 'cupcakes'],
     'place2': ['horizon', 'treasure chest', 'ocean of pudding', 'pancake stack', 'giant pizza', 'circus tent', 'popcorn cloud', 'smoothie sea', 'candy sky']
     
@@ -21,8 +21,11 @@ word_choice = {
 
 def start_game():
     while True:  # Start an infinite loop to show menu continuously
-        print("Welcome to Story Bot!\n")
-        time.sleep(3)
+        print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
+        time.sleep(2)
+        user = input("Please enter your name : \n")
+        print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story. \n \n")
+        time.sleep(2)
         print("I have 4 stories to choose from and YOU pick the words!\n")
         time.sleep(2)
         print("Here they are: \n")
@@ -85,7 +88,7 @@ def elephant_story():
     place2 = selectItem('place2')
 
     time.sleep(2)
-    print("\nLoading.........")
+    print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n In the heart of a lush, green {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a happy elephant named {Fore.GREEN}{name}{Style.RESET_ALL}.")
@@ -113,7 +116,7 @@ def mouse_story():
     place2 = selectItem('place2')
 
     time.sleep(2)
-    print("\nLoading.........")
+    print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a speedy mouse named {Fore.GREEN}{name}.{Style.RESET_ALL}")
@@ -137,12 +140,12 @@ def cat_story():
     place2 = selectItem('place2')
 
     time.sleep(2)
-    print("\nLoading.........")
+    print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a curious cat named {Fore.GREEN}{name}{Style.RESET_ALL}.")
-    print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a sleek coat and bright green eyes that twinkled with mischief.")
-    print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} would set off on grand adventures, exploring every nook and cranny {Fore.GREEN}{name}{Style.RESET_ALL} could find.")
+    print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a sleek coat and bright green eyes that twinkled with mischief.")  
+    print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} would set off on grand adventures, exploring every nook and cranny {Fore.GREEN}{name}{Style.RESET_ALL} could find.") 
     print(f"One misty morning, {Fore.GREEN}{name}{Style.RESET_ALL} stumbled upon an old, forgotten {Fore.GREEN}{thing2}{Style.RESET_ALL} hidden behind a dense thicket.\n")
 
     time.sleep(10)
@@ -161,7 +164,7 @@ def cow_story():
     place2 = selectItem('place2')
 
     time.sleep(2)
-    print("\nLoading.........")
+    print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n On a sunny {Fore.GREEN}{place}{Style.RESET_ALL} in the countryside, there lived a funny cow named {Fore.GREEN}{name}{Style.RESET_ALL}.")
