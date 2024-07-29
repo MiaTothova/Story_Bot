@@ -1,3 +1,4 @@
+import time
 
 # Dictionary
 word_choice = {
@@ -19,13 +20,15 @@ word_choice = {
 def start_game():
     while True:  # Start an infinite loop to show menu continuously
         print("Welcome to Story Bot!\n")
-        print("I have 5 stories to choose from and YOU pick the words!")
+        time.sleep(3)
+        print("I have 4 stories to choose from and YOU pick the words!\n")
+        time.sleep(2)
         print("Here they are: \n")
         print("1. The Happy Elephant")
         print("2. The Speedy Mouse")
         print("3. The Curious Cat")
         print("4. The Funny Cow")
-        print("5. End Game")
+        print("5. End Game \n")
 
         choice = input("Choose a story by entering a number, or end the game by entering 5: ")
         if choice == "1":
@@ -79,12 +82,18 @@ def elephant_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
+    time.sleep(2)
+    print("\nLoading.........")
+    time.sleep(2)
+
     print(f"\n In the heart of a lush, green {place}, there lived a happy elephant named {name}.")
     print(f" She spent her days splashing in cool {liquid} waters, playfully spraying her friends with her {body}.")
     print(f"Every morning, as the sun peeked over the {thing1}, {name} would lead her herd through the forest,")
     print(f"trumpeting cheerful {sound} that echoed through the {thing2}.")
     print(f"The other animals adored her for her gentle {action} and her infectious {place2}.")
-    print(f"One day, {name} discovered a hidden grove filled with the sweetest {food}.")
+    print(f"One day, {name} discovered a hidden grove filled with the sweetest {food}.\n")
+
+    time.sleep(10)
     
     
 
@@ -101,11 +110,16 @@ def mouse_story():
     food = selectItem('food')
     place2 = selectItem('place2')
 
-    print(f"In a quaint {place}, there lived a speedy mouse named {name}.")
+    time.sleep(2)
+    print("\nLoading.........")
+    time.sleep(2)
+
+    print(f"\n In a quaint {place}, there lived a speedy mouse named {name}.")
     print(f"{name} was the fastest mouse in all the {place2}, darting through tall {thing2} and narrow {thing1} with incredible swiftness.")
     print(f"Every day, {name} challenged himself to new {action}, always seeking a faster route or a quicker turn.")
-    print(f" One sunny afternoon, while zipping around the {place}, {name} noticed a distressed {liquid} tangled in a net.")
+    print(f" One sunny afternoon, while zipping around the {place}, {name} noticed a distressed {liquid} tangled in a net.\n")
 
+    time.sleep(10)
 
 
 def cat_story():
@@ -120,10 +134,17 @@ def cat_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
-    print(f"In a charming little {place}, there lived a curious cat named {name}.")
+    time.sleep(2)
+    print("\nLoading.........")
+    time.sleep(2)
+
+    print(f"\n In a charming little {place}, there lived a curious cat named {name}.")
     print(f"{name} had a sleek coat and bright green eyes that twinkled with mischief.")
     print(f"Every day, {name} would set off on grand adventures, exploring every nook and cranny {name} could find.")
-    print(f"One misty morning, {name} stumbled upon an old, forgotten {thing2} hidden behind a dense thicket.")
+    print(f"One misty morning, {name} stumbled upon an old, forgotten {thing2} hidden behind a dense thicket.\n")
+
+    time.sleep(10)
+
 
 def cow_story():
     name = selectItem('name')
@@ -137,11 +158,16 @@ def cow_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
-    print(f"On a sunny {place} in the countryside, there lived a funny cow named {name}.")
+    time.sleep(2)
+    print("\nLoading.........")
+    time.sleep(2)
+
+    print(f"\n On a sunny {place} in the countryside, there lived a funny cow named {name}.")
     print(f"{name} had a knack for making everyone laugh with her silly {sound} and playful {body}.")
     print(f"She loved to wear a straw {thing1} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
     print(f"One day, while the farmer was painting the {thing2}, {name} decided to join in the fun.")
-    print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}.")
+    print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}. \n")
 
+    time.sleep(10)
 
 start_game()
