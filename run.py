@@ -89,7 +89,7 @@ def elephant_story():
     time.sleep(2)
 
     print(f"\n In the heart of a lush, green {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a happy elephant named {Fore.GREEN}{name}{Style.RESET_ALL}.")
-    print(f" She spent her days splashing in cool {Fore.GREEN}{liquid}{Style.RESET_ALL} waters, playfully spraying her friends with her {Fore.GREEN}{body}{Style.RESET_ALL}.")
+    print(f"She spent her days splashing in cool {Fore.GREEN}{liquid}{Style.RESET_ALL} waters, playfully spraying her friends with her {Fore.GREEN}{body}{Style.RESET_ALL}.")
     print(f"Every morning, as the sun peeked over the {Fore.GREEN}{thing1}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} would lead her herd through the forest,")
     print(f"trumpeting cheerful {Fore.GREEN}{sound}{Style.RESET_ALL} that echoed through the {Fore.GREEN}{thing2}{Style.RESET_ALL}.")
     print(f"The other animals adored her for her gentle {Fore.GREEN}{action}{Style.RESET_ALL} and her infectious {Fore.GREEN}{place2}{Style.RESET_ALL}.")
@@ -116,10 +116,10 @@ def mouse_story():
     print("\nLoading.........")
     time.sleep(2)
 
-    print(f"\n In a quaint {place}, there lived a speedy mouse named {name}.")
-    print(f"{name} was the fastest mouse in all the {place2}, darting through tall {thing2} and narrow {thing1} with incredible swiftness.")
-    print(f"Every day, {name} challenged himself to new {action}, always seeking a faster route or a quicker turn.")
-    print(f" One sunny afternoon, while zipping around the {place}, {name} noticed a distressed {liquid} tangled in a net.\n")
+    print(f"\n In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a speedy mouse named {Fore.GREEN}{name}.{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}{name}{Style.RESET_ALL} was the fastest mouse in all the {Fore.GREEN}{place2}{Style.RESET_ALL}, darting through tall {Fore.GREEN}{thing2}{Style.RESET_ALL} and narrow {Fore.GREEN}{thing1}{Style.RESET_ALL} with incredible swiftness.")
+    print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} challenged himself to new {Fore.GREEN}{action}{Style.RESET_ALL}, always seeking a faster route or a quicker turn.")
+    print(f"One sunny afternoon, while zipping around the {Fore.GREEN}{place}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} noticed a distressed {Fore.GREEN}{liquid}{Style.RESET_ALL} tangled in a net.\n")
 
     time.sleep(10)
 
@@ -140,10 +140,10 @@ def cat_story():
     print("\nLoading.........")
     time.sleep(2)
 
-    print(f"\n In a charming little {place}, there lived a curious cat named {name}.")
-    print(f"{name} had a sleek coat and bright green eyes that twinkled with mischief.")
-    print(f"Every day, {name} would set off on grand adventures, exploring every nook and cranny {name} could find.")
-    print(f"One misty morning, {name} stumbled upon an old, forgotten {thing2} hidden behind a dense thicket.\n")
+    print(f"\n In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a curious cat named {Fore.GREEN}{name}{Style.RESET_ALL}.")
+    print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a sleek coat and bright green eyes that twinkled with mischief.")
+    print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} would set off on grand adventures, exploring every nook and cranny {Fore.GREEN}{name}{Style.RESET_ALL} could find.")
+    print(f"One misty morning, {Fore.GREEN}{name}{Style.RESET_ALL} stumbled upon an old, forgotten {Fore.GREEN}{thing2}{Style.RESET_ALL} hidden behind a dense thicket.\n")
 
     time.sleep(10)
 
@@ -164,11 +164,11 @@ def cow_story():
     print("\nLoading.........")
     time.sleep(2)
 
-    print(f"\n On a sunny {place} in the countryside, there lived a funny cow named {name}.")
-    print(f"{name} had a knack for making everyone laugh with her silly {sound} and playful {body}.")
-    print(f"She loved to wear a straw {thing1} she found in the barn, tipping it with her {body} in a comical greeting to anyone who passed by.")
-    print(f"One day, while the farmer was painting the {thing2}, {name} decided to join in the fun.")
-    print(f"She dipped her {food} in the paint bucket and began to swipe it across the {liquid}. \n")
+    print(f"\n On a sunny {Fore.GREEN}{place}{Style.RESET_ALL} in the countryside, there lived a funny cow named {Fore.GREEN}{name}{Style.RESET_ALL}.")
+    print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a knack for making everyone laugh with her silly {Fore.GREEN}{sound}{Style.RESET_ALL} and playful {Fore.GREEN}{body}{Style.RESET_ALL}.")
+    print(f"She loved to wear a straw {Fore.GREEN}{thing1}{Style.RESET_ALL} she found in the barn, tipping it with her {Fore.GREEN}{body}{Style.RESET_ALL} in a comical greeting to anyone who passed by.")
+    print(f"One day, while the farmer was painting the {Fore.GREEN}{thing2}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} decided to join in the fun.")
+    print(f"She dipped her {Fore.GREEN}{food}{Style.RESET_ALL} in the paint bucket and began to swipe it across the {Fore.GREEN}{liquid}{Style.RESET_ALL}. \n")
 
     time.sleep(10)
 
