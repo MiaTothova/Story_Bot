@@ -1,4 +1,6 @@
 import time
+import colorama
+from colorama import Fore, Style
 
 # Dictionary
 word_choice = {
@@ -86,12 +88,12 @@ def elephant_story():
     print("\nLoading.........")
     time.sleep(2)
 
-    print(f"\n In the heart of a lush, green {place}, there lived a happy elephant named {name}.")
-    print(f" She spent her days splashing in cool {liquid} waters, playfully spraying her friends with her {body}.")
-    print(f"Every morning, as the sun peeked over the {thing1}, {name} would lead her herd through the forest,")
-    print(f"trumpeting cheerful {sound} that echoed through the {thing2}.")
-    print(f"The other animals adored her for her gentle {action} and her infectious {place2}.")
-    print(f"One day, {name} discovered a hidden grove filled with the sweetest {food}.\n")
+    print(f"\n In the heart of a lush, green {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a happy elephant named {Fore.GREEN}{name}{Style.RESET_ALL}.")
+    print(f" She spent her days splashing in cool {Fore.GREEN}{liquid}{Style.RESET_ALL} waters, playfully spraying her friends with her {Fore.GREEN}{body}{Style.RESET_ALL}.")
+    print(f"Every morning, as the sun peeked over the {Fore.GREEN}{thing1}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} would lead her herd through the forest,")
+    print(f"trumpeting cheerful {Fore.GREEN}{sound}{Style.RESET_ALL} that echoed through the {Fore.GREEN}{thing2}{Style.RESET_ALL}.")
+    print(f"The other animals adored her for her gentle {Fore.GREEN}{action}{Style.RESET_ALL} and her infectious {Fore.GREEN}{place2}{Style.RESET_ALL}.")
+    print(f"One day, {Fore.GREEN}{name}{Style.RESET_ALL} discovered a hidden grove filled with the sweetest {Fore.GREEN}{food}{Style.RESET_ALL}.\n")
 
     time.sleep(10)
     
