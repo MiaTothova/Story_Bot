@@ -1,5 +1,4 @@
 import time
-import colorama
 from colorama import Fore, Style
 
 # Dictionary
@@ -18,17 +17,20 @@ word_choice = {
 }
 
 
+def welcome():
+     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
+     time.sleep(2)
+     user = input("Please enter your name : \n")
+     print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story. \n \n")
+     time.sleep(2)
+
 
 def start_game():
+    welcome()
     while True:  # Start an infinite loop to show menu continuously
-        print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
+        print(f"{Fore.YELLOW}I have 4 stories to choose from and YOU pick the words!{Style.RESET_ALL}\n")
         time.sleep(2)
-        user = input("Please enter your name : \n")
-        print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story. \n \n")
-        time.sleep(2)
-        print("I have 4 stories to choose from and YOU pick the words!\n")
-        time.sleep(2)
-        print("Here they are: \n")
+        print(f"{Fore.YELLOW}Here they are:{Style.RESET_ALL} \n")
         print("1. The Happy Elephant")
         print("2. The Speedy Mouse")
         print("3. The Curious Cat")
@@ -45,10 +47,10 @@ def start_game():
         elif choice == "4":
             cow_story()
         elif choice == "5":
-            print("\n\nSee you next time!")
+            print(f"{Fore.YELLOW}\n\nSee you next time!{Style.RESET_ALL} ")
             break  # Break out of the loop to end the game
         else:
-            print("Please enter a valid option! \n\n")
+            print(f"{Fore.RED}Please enter a valid option!{Style.RESET_ALL}\n\n")
             
 
 def selectItem(key):
@@ -56,7 +58,7 @@ def selectItem(key):
     max_index = len(items)  # This is the maximum index we can select
 
     # Print the options for the user
-    print(f"Select a '{key}' from the list below by entering the corresponding number:")
+    print(f"{Fore.YELLOW}Select a '{key}' from the list below by entering the corresponding number:{Style.RESET_ALL}")
     for index, item in enumerate(items, start=1):
         print(f"{index}. {item}")
 
@@ -66,9 +68,9 @@ def selectItem(key):
             if 1 <= selection <= max_index:  # Check if the selection is within the valid range
                 return items[selection - 1]  # Return the selected item
             else:
-                print(f"Please enter a number between 1 and {max_index}.")  # Inform the user about the valid range
+                print(f"{Fore.RED}Please enter a number between 1 and {max_index}.{Style.RESET_ALL}")  # Inform the user about the valid range
         except ValueError:
-            print("Invalid input. Please enter a number.")  # Handle the case where input is not a number
+            print(f"{Fore.RED}Invalid input. Please enter a number.{Style.RESET_ALL}")  # Handle the case where input is not a number
 
 
 
@@ -87,7 +89,7 @@ def elephant_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
-    time.sleep(2)
+    time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
@@ -96,7 +98,7 @@ def elephant_story():
     print(f"Every morning, as the sun peeked over the {Fore.GREEN}{thing1}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} would lead her herd through the forest,")
     print(f"trumpeting cheerful {Fore.GREEN}{sound}{Style.RESET_ALL} that echoed through the {Fore.GREEN}{thing2}{Style.RESET_ALL}.")
     print(f"The other animals adored her for her gentle {Fore.GREEN}{action}{Style.RESET_ALL} and her infectious {Fore.GREEN}{place2}{Style.RESET_ALL}.")
-    print(f"One day, {Fore.GREEN}{name}{Style.RESET_ALL} discovered a hidden grove filled with the sweetest {Fore.GREEN}{food}{Style.RESET_ALL}.\n")
+    print(f"One day, {Fore.GREEN}{name}{Style.RESET_ALL} discovered a hidden grove filled with the sweetest {Fore.GREEN}{food}{Style.RESET_ALL}.\n\n")
 
     time.sleep(10)
     
@@ -115,14 +117,14 @@ def mouse_story():
     food = selectItem('food')
     place2 = selectItem('place2')
 
-    time.sleep(2)
+    time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a speedy mouse named {Fore.GREEN}{name}.{Style.RESET_ALL}")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL} was the fastest mouse in all the {Fore.GREEN}{place2}{Style.RESET_ALL}, darting through tall {Fore.GREEN}{thing2}{Style.RESET_ALL} and narrow {Fore.GREEN}{thing1}{Style.RESET_ALL} with incredible swiftness.")
     print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} challenged himself to new {Fore.GREEN}{action}{Style.RESET_ALL}, always seeking a faster route or a quicker turn.")
-    print(f"One sunny afternoon, while zipping around the {Fore.GREEN}{place}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} noticed a distressed {Fore.GREEN}{liquid}{Style.RESET_ALL} tangled in a net.\n")
+    print(f"One sunny afternoon, while zipping around the {Fore.GREEN}{place}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} noticed a distressed {Fore.GREEN}{liquid}{Style.RESET_ALL} tangled in a net.\n\n")
 
     time.sleep(10)
 
@@ -139,14 +141,14 @@ def cat_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
-    time.sleep(2)
+    time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
     print(f"\n In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there lived a curious cat named {Fore.GREEN}{name}{Style.RESET_ALL}.")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a sleek coat and bright green eyes that twinkled with mischief.")  
     print(f"Every day, {Fore.GREEN}{name}{Style.RESET_ALL} would set off on grand adventures, exploring every nook and cranny {Fore.GREEN}{name}{Style.RESET_ALL} could find.") 
-    print(f"One misty morning, {Fore.GREEN}{name}{Style.RESET_ALL} stumbled upon an old, forgotten {Fore.GREEN}{thing2}{Style.RESET_ALL} hidden behind a dense thicket.\n")
+    print(f"One misty morning, {Fore.GREEN}{name}{Style.RESET_ALL} stumbled upon an old, forgotten {Fore.GREEN}{thing2}{Style.RESET_ALL} hidden behind a dense thicket.\n\n")
 
     time.sleep(10)
 
@@ -163,7 +165,7 @@ def cow_story():
     food= selectItem('food')
     place2 = selectItem('place2')
 
-    time.sleep(2)
+    time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading.............................{Style.RESET_ALL}")
     time.sleep(2)
 
@@ -171,7 +173,7 @@ def cow_story():
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a knack for making everyone laugh with her silly {Fore.GREEN}{sound}{Style.RESET_ALL} and playful {Fore.GREEN}{body}{Style.RESET_ALL}.")
     print(f"She loved to wear a straw {Fore.GREEN}{thing1}{Style.RESET_ALL} she found in the barn, tipping it with her {Fore.GREEN}{body}{Style.RESET_ALL} in a comical greeting to anyone who passed by.")
     print(f"One day, while the farmer was painting the {Fore.GREEN}{thing2}{Style.RESET_ALL}, {Fore.GREEN}{name}{Style.RESET_ALL} decided to join in the fun.")
-    print(f"She dipped her {Fore.GREEN}{food}{Style.RESET_ALL} in the paint bucket and began to swipe it across the {Fore.GREEN}{liquid}{Style.RESET_ALL}. \n")
+    print(f"She dipped her {Fore.GREEN}{food}{Style.RESET_ALL} in the paint bucket and began to swipe it across the {Fore.GREEN}{liquid}{Style.RESET_ALL}. \n\n")
 
     time.sleep(10)
 
