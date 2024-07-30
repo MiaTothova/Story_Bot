@@ -18,11 +18,19 @@ word_choice = {
 
 
 def welcome():
-     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
-     time.sleep(2)
-     user = input("Please enter your name : \n")
-     print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story. \n \n")
-     time.sleep(2)
+    print(" ____  _                        ____        _") 
+    print("/ ___|| |_ ___  _ __ _   _     | __ )  ___ | |_ ")
+    print("\___ \| __/ _ \| '__| | | |    |  _ \ / _ \| __|")
+    print(" ___) | || (_) | |  | |_| |    | |_) | (_) | |_ ")
+    print("|____/ \__\___/|_|   \__, |    |____/ \___/ \__|")
+    print("                    |___/                      ")
+
+    print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
+    time.sleep
+    time.sleep(2)
+    user = input("Please enter your name : \n")
+    print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story. \n \n")
+    time.sleep(2)
 
 
 def start_game():
