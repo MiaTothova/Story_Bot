@@ -39,11 +39,10 @@ def welcome():
     print(r"|____/ \__\___/|_|   \__, |    |____/ \___/ \__|")
     print(r"                    |___/                      ")
 
-
     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
     time.sleep(2)
     # user = input("What's your name? : \n")
-    # print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story.\n \n")
+    # print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Pick a story.\n \n")
     # time.sleep(2)
     while True:
         username = input("What's your name? (Letters only):\n").strip()
@@ -138,8 +137,8 @@ def elephant_story():
     print(r"  .   'C/ |    |    |   |    |mrf  ,")
     print(r"  \), .. .'OOO-'. ..'OOO'OOO-'. ..\(,")
     time.sleep(1)
-
-    print(f"\nIn the heart of a lush,green {Fore.GREEN}{place}{Style.RESET_ALL}")
+    print("\n")
+    print(f"In the heart of a lush,green {Fore.GREEN}{place}{Style.RESET_ALL}")
     print(f"there lived a happy elephant named")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL}. She spent her days splashing")
     print(f"in cool {Fore.GREEN}{liquid}{Style.RESET_ALL} waters, playfully")
@@ -180,10 +179,10 @@ def mouse_story():
     print(r"    ((   ))   )")
     print(r"    /\) (/\  /")
     print(r"jgs \  Y  /-'")
-    print(r"     nn^nn"  )
+    print(r"     nn^nn")
     time.sleep(1)
-
-    print(f"\nIn a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived")
+    print("\n")
+    print(f"In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived")
     print("a speedy mouse named {Fore.GREEN}{name}{Style.RESET_ALL}")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL} was the fastest mouse")
     print(f"in all the {Fore.GREEN}{place2}{Style.RESET_ALL}, darting through")
@@ -222,8 +221,8 @@ def cat_story():
     print(r"""   _..`--'_..-_/  /--'_. """)
     print(r"""  ((((.-''  ((((.'  (((.-' """)
     time.sleep(1)
-
-    print(f"\nIn a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there")
+    print("\n")
+    print(f"In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there")
     print(f"lived a curious cat named {Fore.GREEN}{name}{Style.RESET_ALL}.")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL}  had a sleek coat")
     print(f"and bright green eyes that twinkled with mischief.")
@@ -274,8 +273,8 @@ def cow_story():
     print(r"             /~  |       /~  |")
     print(r"             ~~~~        ~~~~")
     time.sleep(1)
-
-    print(f"\nOn a sunny {Fore.GREEN}{place}{Style.RESET_ALL}")
+    print("\n")
+    print(f"On a sunny {Fore.GREEN}{place}{Style.RESET_ALL}")
     print("in the countryside, there lived a funny cow")
     print(f"named {Fore.GREEN}{name}{Style.RESET_ALL}.")
     print(f"{Fore.GREEN}{name}{Style.RESET_ALL} had a knack for making")
@@ -293,4 +292,3 @@ def cow_story():
 
 
 start_game()
-
