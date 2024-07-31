@@ -32,6 +32,10 @@ word_choice = {
 
 
 def welcome():
+    """
+    Welcomes the user and asks for a username.
+    It will continue the loop untill a name is given.
+    """
     print(r" ____  _                        ____        _")
     print(r"/ ___|| |_ ___  _ __ _   _     | __ )  ___ | |_ ")
     print(r"\___ \| __/ _ \| '__| | | |    |  _ \ / _ \| __|")
@@ -41,9 +45,7 @@ def welcome():
 
     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
     time.sleep(2)
-    # user = input("What's your name? : \n")
-    # print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Pick a story.\n \n")
-    # time.sleep(2)
+    
     while True:
         username = input("What's your name? (Letters only):\n").strip()
         if username.isalpha():
@@ -53,7 +55,11 @@ def welcome():
 
 def start_game():
     welcome()
-    while True:  # Start an infinite loop to show menu continuously
+    """
+    Start an infinite loop to show menu options,
+    untill a valid option is picked.
+    """
+    while True:  
         print(f"{Fore.YELLOW}I have 4 stories to choose from and")
         print(f"YOU pick the words!{Style.RESET_ALL}\n")
         time.sleep(2)
@@ -75,37 +81,37 @@ def start_game():
             cow_story()
         elif choice == "5":
             print(f"{Fore.YELLOW}\n\nSee you next time!{Style.RESET_ALL} ")
-            break  # Break out of the loop to end the game
+            break 
         else:
             print(f"{Fore.RED}Enter a valid option! {Style.RESET_ALL}\n\n")
 
 
 def selectItem(key):
-    items = word_choice[key]  # Get the list of items for the given key
-    max_index = len(items)  # This is the maximum index we can select
-
-    # Print the options for the user
+    """
+    Get the list of items for the given key,
+    based on the maximum index.
+    Start an infinite loop to keep asking until a valid input is given.
+    """
+    items = word_choice[key]  
+    max_index = len(items)
+    
     print(f"{Fore.YELLOW}Select a '{key}'from below: {Style.RESET_ALL}")
     for index, item in enumerate(items, start=1):
         print(f"{index}. {item}")
 
     while True:
-        # Start an infinite loop to keep asking until a valid input is given
+        
         try:
             selection = int(input(f"Enter your choice (1-{max_index}): "))
-            # Ask user for input
+
             if 1 <= selection <= max_index:
-                # Check if the selection is within the valid range
-                return items[selection - 1]  # Return the selected item
+                return items[selection - 1]
             else:
-                # Inform the user about the valid range
                 print(f"{Fore.RED}Between 1 & {max_index}.{Style.RESET_ALL}")
         except ValueError:
-            # Handle the case where input is not a number
             print(f"{Fore.RED}Invalid input.Enter a number.{Style.RESET_ALL}")
 
 
-# selectItem print:s selected words into the story
 def elephant_story():
     name = selectItem('name')
     place = selectItem('place')
@@ -121,6 +127,7 @@ def elephant_story():
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
+
     print(r" __              ")
     print(r"'. \                ")
     print(r"'- \               ")
@@ -137,6 +144,7 @@ def elephant_story():
     print(r"  .   'C/ |    |    |   |    |mrf  ,")
     print(r"  \), .. .'OOO-'. ..'OOO'OOO-'. ..\(,")
     time.sleep(1)
+
     print("\n")
     print(f"In the heart of a lush,green {Fore.GREEN}{place}{Style.RESET_ALL}")
     print(f"there lived a happy elephant named")
@@ -172,6 +180,7 @@ def mouse_story():
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
+
     print(r"    (q\_/p)")
     print(r"     /. .\ ")
     print(r"    =\_t_/=   __")
@@ -181,6 +190,7 @@ def mouse_story():
     print(r"jgs \  Y  /-'")
     print(r"     nn^nn")
     time.sleep(1)
+
     print("\n")
     print(f"In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived")
     print("a speedy mouse named {Fore.GREEN}{name}{Style.RESET_ALL}")
@@ -215,12 +225,14 @@ def cat_story():
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
+
     print(r"""("`-''-/").___..--''"`-._ """)
     print(r""" `6_ 6  )   `-.  (     ).`-.__.`) """)
     print(r""" (_Y_.)'  ._   )  `._ `. ``-..-' """)
     print(r"""   _..`--'_..-_/  /--'_. """)
     print(r"""  ((((.-''  ((((.'  (((.-' """)
     time.sleep(1)
+
     print("\n")
     print(f"In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there")
     print(f"lived a curious cat named {Fore.GREEN}{name}{Style.RESET_ALL}.")
@@ -251,6 +263,7 @@ def cow_story():
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
+
     print(r"              (      )")
     print(r"              ~(^^^^)~")
     print(r"               ) @@ \~_          |\ ")
@@ -273,6 +286,7 @@ def cow_story():
     print(r"             /~  |       /~  |")
     print(r"             ~~~~        ~~~~")
     time.sleep(1)
+    
     print("\n")
     print(f"On a sunny {Fore.GREEN}{place}{Style.RESET_ALL}")
     print("in the countryside, there lived a funny cow")
