@@ -40,11 +40,15 @@ def welcome():
     # print("                    |___/                      ")
 
     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
-    time.sleep
     time.sleep(2)
-    user = input("Please enter your name : \n")
-    print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story.\n \n")
-    time.sleep(2)
+    # user = input("What's your name? : \n")
+    # print(f"Hi {Fore.YELLOW}{user}{Style.RESET_ALL}! Let's pick a story.\n \n")
+    # time.sleep(2)
+    while True:
+        username = input("What's your name? (Letters only):\n").strip()
+        if username.isalpha():
+            return print(f"\n{Fore.YELLOW}Hi {username}!{Style.RESET_ALL}\n\n")
+        print(f"{Fore.RED}Invalid input. Enter a name.{Style.RESET_ALL}")
 
 
 def start_game():
@@ -115,7 +119,7 @@ def elephant_story():
     place2 = selectItem('place2')
 
     time.sleep(1)
-    print(f"\n{Fore.YELLOW}Loading..........................{Style.RESET_ALL}")
+    print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
 
     print(f"In the heart of a lush,green {Fore.GREEN}{place}{Style.RESET_ALL}")
@@ -150,7 +154,7 @@ def mouse_story():
     place2 = selectItem('place2')
 
     time.sleep(1)
-    print(f"\n{Fore.YELLOW}Loading..........................{Style.RESET_ALL}")
+    print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
 
     print(f"In a quaint {Fore.GREEN}{place}{Style.RESET_ALL}, there lived")
@@ -184,7 +188,7 @@ def cat_story():
     place2 = selectItem('place2')
 
     time.sleep(1)
-    print(f"\n{Fore.YELLOW}Loading..........................{Style.RESET_ALL}")
+    print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
 
     print(f"In a charming little {Fore.GREEN}{place}{Style.RESET_ALL}, there")
@@ -214,7 +218,7 @@ def cow_story():
     place2 = selectItem('place2')
 
     time.sleep(1)
-    print(f"\n{Fore.YELLOW}Loading..........................{Style.RESET_ALL}")
+    print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
     time.sleep(2)
 
     print(f"\nOn a sunny {Fore.GREEN}{place}{Style.RESET_ALL}")
