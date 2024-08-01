@@ -63,10 +63,15 @@ I included the following features in my Madlib:
 
 
 ## The Design
+The design of Story Bot focuses on being simple and user-friendly. It uses colorful text to make the game easy to navigate and understand, helping players focus on the fun of storytelling. The game is text-based, which keeps it straightforward and lets players use their imagination to make their own stories. Colors help differentiate between types of text, which enhances readability and interaction. The game is designed to be enjoyable for everyone, especially children.
 
 
 ## Technologies Used
-* 
+
+* [Gitpod](https://gitpod.io/workspaces)Was used to write code for this application.
+* [Github](https://github.com/) Was used to host my repository.
+* [Heroku](https://id.heroku.com/login)Used to host my application.
+* [pep8online.com](https://pep8ci.herokuapp.com/#)Used to validate my code and check for errors.
 
 ## Testing
 1. 
