@@ -41,16 +41,25 @@ The creation of this Madlib game was aimed at children. My 2 older children who 
 
 
 ## The skeleton
+The application runs in a console window, utilizing text and basic ASCII art for illustrations.  Inputs are taken through simple text prompts where users can type their choice and get a responses.
 
-![]()
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/chart.png)
 
 ## The Scope
-
+I included the following features in my Madlib:
 
 ### Features
-1. 
+1. Users can choose from multiple stories.
+2. Users select words from predefined lists to fill placeholders in the story.
+3. Users have a choice of 4 Madlib stories.
+4. The game is designed to keep the user engaged through constant interaction. Each story requires multiple inputs from the user, keeping the session interactive.
+5. Easy game exit.
 
 ### Future features
+1. Expand the library of characters, settings, and plot elements, allowing for more detailed customization of stories.
+2. Save score and top 5 scores.
+3. Allow users to contribute their own story templates, characters, and word lists, which can be shared with others in a community library.
+4. Develop a mobile version of the game, making it accessible on smartphones and tablets.
 
 
 ## The Design
