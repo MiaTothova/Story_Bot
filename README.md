@@ -29,10 +29,16 @@ The creation of this Madlib game was aimed at children. My 2 older children who 
 * Provide entertainment
 
 ## Owner Stories
-1.
+1. As an owner, I want to encourage the user to keep returning to the game.
+2. As an owner, I want to make the game entertaining for the user.
+3. As an owner, I want to show off my newly learned Python skills.
+4. As an owner, I want the game to be educational.
 
 ### User Stories
-1. 
+1. As a new visitor, I want to easily navigate the terminal and make a selection.
+2. As a visitor, I want to create and read funny stories.
+3. As a visitor, I want to exit the game easily.
+
 
 ## The skeleton
 
