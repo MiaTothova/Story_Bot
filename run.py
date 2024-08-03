@@ -113,6 +113,9 @@ def select_item(key):
 
 
 def elephant_story():
+    """
+    Function that runs the Happy elephant story.
+    """
     name = select_item('name')
     place = select_item('place')
     liquid = select_item('liquid')
@@ -166,6 +169,9 @@ def elephant_story():
 
 
 def mouse_story():
+    """
+    Function that runs the Speedy mouse story.
+    """
     name = select_item('name')
     place = select_item('place')
     liquid = select_item('liquid')
@@ -211,6 +217,9 @@ def mouse_story():
 
 
 def cat_story():
+    """
+    Function that runs the Curious cat story.
+    """
     name = select_item('name')
     place = select_item('place')
     liquid = select_item('liquid')
@@ -249,6 +258,9 @@ def cat_story():
 
 
 def cow_story():
+    """
+    Function that runs the Funny cow story.
+    """
     name = select_item('name')
     place = select_item('place')
     liquid = select_item('liquid')
