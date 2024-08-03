@@ -71,7 +71,9 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 * [Gitpod](https://gitpod.io/workspaces)Was used to write code for this application.
 * [Github](https://github.com/) Was used to host my repository.
 * [Heroku](https://id.heroku.com/login)Used to host my application.
-* [pep8online.com](https://pep8ci.herokuapp.com/#)Used to validate my code and check for errors.
+* [pep8online.com](https://pep8ci.herokuapp.com/#)Used to
+
+ validate my code and check for errors.
 
 ## Testing
 1. 
@@ -92,6 +94,15 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 ![]()
 
 ## Deployment
+1. In the Heroku dashboard, I selected 'New' in the top right-hand corner and clicked 'Create new app'.
+2. Then I Created the App name and Chose my region as Europe. Then I pressed  'Create app'.
+3. Then I selected the Settings tab, and scrolled down to 'Buildpacks'. Firstly I added 'Python' saved my changes and then selected 'Node.js' and saved my changes again. - Python must be at the top of the list.
+4. On top of the page, I clicked on the 'Deploy' section, and I selected Github as my deployment method.
+5. Then I selected 'Connect to Github, searched for my repository name, and clicked 'Connect' to link my Heroku app to my Github repository code.
+6. Scrolling down I selected 'Enable Automatic Deploys' and after this, I selected 'Deploy Branch' to deploy my project. I had to wait for it to build.
+7. After it was successfully deployed a 'view' button appeared which took me to my deployed app.
+
+
 
 
 
