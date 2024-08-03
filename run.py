@@ -45,7 +45,7 @@ def welcome():
 
     print(f"{Fore.YELLOW}Welcome to Story Bot!{Style.RESET_ALL}\n")
     time.sleep(2)
-    
+
     while True:
         username = input("What's your name? (Letters only):\n").strip()
         if username.isalpha():
@@ -59,7 +59,7 @@ def start_game():
     Start an infinite loop to show menu options,
     untill a valid option is picked.
     """
-    while True:  
+    while True:
         print(f"{Fore.YELLOW}I have 4 stories to choose from and")
         print(f"YOU pick the words!{Style.RESET_ALL}\n")
         time.sleep(2)
@@ -81,26 +81,26 @@ def start_game():
             cow_story()
         elif choice == "5":
             print(f"{Fore.YELLOW}\n\nSee you next time!{Style.RESET_ALL} ")
-            break 
+            break
         else:
             print(f"{Fore.RED}Enter a valid option! {Style.RESET_ALL}\n\n")
 
 
-def selectItem(key):
+def select_item(key):
     """
     Get the list of items for the given key,
     based on the maximum index.
     Start an infinite loop to keep asking until a valid input is given.
     """
-    items = word_choice[key]  
+    items = word_choice[key]
     max_index = len(items)
-    
+
     print(f"{Fore.YELLOW}Select a '{key}'from below: {Style.RESET_ALL}")
     for index, item in enumerate(items, start=1):
         print(f"{index}. {item}")
 
     while True:
-        
+
         try:
             selection = int(input(f"Enter your choice (1-{max_index}): "))
 
@@ -113,16 +113,16 @@ def selectItem(key):
 
 
 def elephant_story():
-    name = selectItem('name')
-    place = selectItem('place')
-    liquid = selectItem('liquid')
-    body = selectItem('body')
-    thing1 = selectItem('thing1')
-    sound = selectItem('sound')
-    thing2 = selectItem('thing2')
-    action = selectItem('action')
-    food = selectItem('food')
-    place2 = selectItem('place2')
+    name = select_item('name')
+    place = select_item('place')
+    liquid = select_item('liquid')
+    body = select_item('body')
+    thing1 = select_item('thing1')
+    sound = select_item('sound')
+    thing2 = select_item('thing2')
+    action = select_item('action')
+    food = select_item('food')
+    place2 = select_item('place2')
 
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
@@ -166,16 +166,16 @@ def elephant_story():
 
 
 def mouse_story():
-    name = selectItem('name')
-    place = selectItem('place')
-    liquid = selectItem('liquid')
-    body = selectItem('body')
-    thing1 = selectItem('thing1')
-    sound = selectItem('sound')
-    thing2 = selectItem('thing2')
-    action = selectItem('action')
-    food = selectItem('food')
-    place2 = selectItem('place2')
+    name = select_item('name')
+    place = select_item('place')
+    liquid = select_item('liquid')
+    body = select_item('body')
+    thing1 = select_item('thing1')
+    sound = select_item('sound')
+    thing2 = select_item('thing2')
+    action = select_item('action')
+    food = select_item('food')
+    place2 = select_item('place2')
 
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
@@ -211,16 +211,16 @@ def mouse_story():
 
 
 def cat_story():
-    name = selectItem('name')
-    place = selectItem('place')
-    liquid = selectItem('liquid')
-    body = selectItem('body')
-    thing1 = selectItem('thing1')
-    sound = selectItem('sound')
-    thing2 = selectItem('thing2')
-    action = selectItem('action')
-    food = selectItem('food')
-    place2 = selectItem('place2')
+    name = select_item('name')
+    place = select_item('place')
+    liquid = select_item('liquid')
+    body = select_item('body')
+    thing1 = select_item('thing1')
+    sound = select_item('sound')
+    thing2 = select_item('thing2')
+    action = select_item('action')
+    food = select_item('food')
+    place2 = select_item('place2')
 
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
@@ -249,16 +249,16 @@ def cat_story():
 
 
 def cow_story():
-    name = selectItem('name')
-    place = selectItem('place')
-    liquid = selectItem('liquid')
-    body = selectItem('body')
-    thing1 = selectItem('thing1')
-    sound = selectItem('sound')
-    thing2 = selectItem('thing2')
-    action = selectItem('action')
-    food = selectItem('food')
-    place2 = selectItem('place2')
+    name = select_item('name')
+    place = select_item('place')
+    liquid = select_item('liquid')
+    body = select_item('body')
+    thing1 = select_item('thing1')
+    sound = select_item('sound')
+    thing2 = select_item('thing2')
+    action = select_item('action')
+    food = select_item('food')
+    place2 = select_item('place2')
 
     time.sleep(1)
     print(f"\n{Fore.YELLOW}Loading......................{Style.RESET_ALL}\n")
@@ -286,7 +286,7 @@ def cow_story():
     print(r"             /~  |       /~  |")
     print(r"             ~~~~        ~~~~")
     time.sleep(1)
-    
+
     print("\n")
     print(f"On a sunny {Fore.GREEN}{place}{Style.RESET_ALL}")
     print("in the countryside, there lived a funny cow")
