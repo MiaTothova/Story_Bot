@@ -76,22 +76,35 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
  validate my code and check for errors.
 
 ## Testing
-1. 
-![]()
+1. As a new visitor, I want to easily navigate the terminal and make a selection.
+2. As an owner, I want to make the game entertaining for the user.
 
+* Here the user is greeted wth a welcome message and is asked to input their name.
+* After name input, a list of stories is displayed with the corresponding number selection. 
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/1.png)
 
-![]()
+3. As an owner, I want to show off my newly learned Python skills.
+4. As an owner, I want the game to be educational.
 
-3.
-![]() 
+* After making a story selection, the user then has to go through a word choice process. The selected words will be inserted into the story template. 
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/2.png)
+
+ 
+5. As a visitor, I want to create and read funny stories.
+* After selecting words, the player can see the output highlighted in green being inserted into the story.
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/3.png)
+
+6. As an owner, I want to encourage the user to keep returning to the game.
+7. As a visitor, I want to exit the game easily.
+* Here the player has the option to keep re-play the story or play a different story. 
+* The player has the option to easily end the game. 
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/4.png)
 
  ### Adicional Testing
-* 
- ## Compatibility
-
+*
 
 ## Validation
-![]()
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/Linter.png)
 
 ## Deployment
 1. In the Heroku dashboard, I selected 'New' in the top right-hand corner and clicked 'Create new app'.
@@ -101,11 +114,6 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 5. Then I selected 'Connect to Github, searched for my repository name, and clicked 'Connect' to link my Heroku app to my Github repository code.
 6. Scrolling down I selected 'Enable Automatic Deploys' and after this, I selected 'Deploy Branch' to deploy my project. I had to wait for it to build.
 7. After it was successfully deployed a 'view' button appeared which took me to my deployed app.
-
-
-
-
-
 
 ## Credits
 * 
