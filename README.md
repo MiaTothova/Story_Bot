@@ -99,7 +99,7 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 * The player has the option to easily end the game. 
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/4.png)
 
-####Error Testing
+### Error Testing
 * Numerals arent accepted in place of a username.
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/5.png)
 
@@ -140,8 +140,7 @@ No code has been used from outside resources
 * [ASCII images](https://www.asciiart.eu/)
 
 ### Acknowledgments
-* I would like to thank Kim and Alan Bushell from CI for helping me sort out the unforeseen circumstances that arose during my * * * 
-* development process. and made sure that I received a new mentor in time. 
+* I would like to thank Kim and Alan Bushell from CI for helping me sort out the unforeseen circumstances that arose during my development process. and made sure that I received a new mentor in time. 
 * I want to thank my new mentor, Rory Patrick Sheridan, for looking over my project and giving me very much-needed last-minute feedback. 
 * I want to thank Marko Tot my Cohort Facilitator, for guiding me and providing me with resources.
 
