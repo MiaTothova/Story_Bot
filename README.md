@@ -101,15 +101,15 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 
 ####Error Testing
 * Numerals arent accepted in place of a username.
-[](https://github.com/MiaTothova/Story_Bot/blob/main/images/5.png)
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/5.png)
 
 * Numbers accepted are only within the menu range, also no letters are accepted.
-[](https://github.com/MiaTothova/Story_Bot/blob/main/images/6.png)
-[](https://github.com/MiaTothova/Story_Bot/blob/main/images/7.png)
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/6.png)
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/7.png)
 
 * Numbers accepted are only within the dictionary range, also no letters are accepted.
-[](https://github.com/MiaTothova/Story_Bot/blob/main/images/8.png)
-[](https://github.com/MiaTothova/Story_Bot/blob/main/images/9.png)
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/8.png)
+![](https://github.com/MiaTothova/Story_Bot/blob/main/images/9.png)
 
  ### Adicional Testing
 * I continuously used the CI Python linter to fix any error messages in my code. 
