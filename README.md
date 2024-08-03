@@ -71,9 +71,8 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 * [Gitpod](https://gitpod.io/workspaces)Was used to write code for this application.
 * [Github](https://github.com/) Was used to host my repository.
 * [Heroku](https://id.heroku.com/login)Used to host my application.
-* [pep8online.com](https://pep8ci.herokuapp.com/#)Used to
-
- validate my code and check for errors.
+* [pep8online.com](https://pep8ci.herokuapp.com/#)Used to validate my code validate my code and check for errors.
+* [Colorama](https://pypi.org/project/colorama/)Used to give colour to my code.
 
 ## Testing
 1. As a new visitor, I want to easily navigate the terminal and make a selection.
@@ -100,12 +99,26 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 * The player has the option to easily end the game. 
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/4.png)
 
+####Error Testing
+* Numerals arent accepted in place of a username.
+[](https://github.com/MiaTothova/Story_Bot/blob/main/images/5.png)
+
+* Numbers accepted are only within the menu range, also no letters are accepted.
+[](https://github.com/MiaTothova/Story_Bot/blob/main/images/6.png)
+[](https://github.com/MiaTothova/Story_Bot/blob/main/images/7.png)
+
+* Numbers accepted are only within the dictionary range, also no letters are accepted.
+[](https://github.com/MiaTothova/Story_Bot/blob/main/images/8.png)
+[](https://github.com/MiaTothova/Story_Bot/blob/main/images/9.png)
+
  ### Adicional Testing
 * I continuously used the CI Python linter to fix any error messages in my code. 
 * I continuously tested my code in the gitpod terminal to fix any issues that arose during the development process.
 * I tested on Heroku to see that my game was running without any issues.
 
 ## Validation
+* My code has passed through the CI Python Linter.
+
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/Linter.png)
 
 ## Deployment
@@ -118,7 +131,19 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 7. After it was successfully deployed a 'view' button appeared which took me to my deployed app.
 
 ## Credits
-* 
+No code has been used from outside resources
+* I have watched the following videos for inspiration and ideas:
+   1. [Build a Mad Libs Generator](https://www.youtube.com/watch?v=vFNZvZSOqlY&t=2s)
+   2. [Madlibs Python Tutorial](https://www.youtube.com/watch?v=GdBV4irqOd8)
+   3. [Mad Libs Game](https://www.youtube.com/watch?v=u7g9mRzQLYE&t=2s)
+*  I have used [ChadGPT](https://chatgpt.com/) to generate my short stories and a list of words that were then inserted into my dictionary. 
+* [ASCII images](https://www.asciiart.eu/)
+
+### Acknowledgments
+* I would like to thank Kim and Alan Bushell from CI for helping me sort out the unforeseen circumstances that arose during my * * * 
+* development process. and made sure that I received a new mentor in time. 
+* I want to thank my new mentor, Rory Patrick Sheridan, for looking over my project and giving me very much-needed last-minute feedback. 
+* I want to thank Marko Tot my Cohort Facilitator, for guiding me and providing me with resources.
 
 
 
