@@ -101,7 +101,9 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/4.png)
 
  ### Adicional Testing
-*
+* I continuously used the CI Python linter to fix any error messages in my code. 
+* I continuously tested my code in the gitpod terminal to fix any issues that arose during the development process.
+* I tested on Heroku to see that my game was running without any issues.
 
 ## Validation
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/Linter.png)
