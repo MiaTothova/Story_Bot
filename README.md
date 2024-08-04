@@ -87,7 +87,6 @@ The design of Story Bot focuses on being simple and user-friendly. It uses color
 
 * After making a story selection, the user then has to go through a word choice process. The selected words will be inserted into the story template. 
 ![](https://github.com/MiaTothova/Story_Bot/blob/main/images/2.png)
-
  
 5. As a visitor, I want to create and read funny stories.
 * After selecting words, the player can see the output highlighted in green being inserted into the story.
@@ -143,6 +142,3 @@ No code has been used from outside resources
 * I would like to thank Kim and Alan Bushell from CI for helping me sort out the unforeseen circumstances that arose during my development process. and made sure that I received a new mentor in time. 
 * I want to thank my new mentor, Rory Patrick Sheridan, for looking over my project and giving me very much-needed last-minute feedback. 
 * I want to thank Marko Tot my Cohort Facilitator, for guiding me and providing me with resources.
-
-
-
