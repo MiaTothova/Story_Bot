@@ -1,7 +1,9 @@
 import time
 from colorama import Fore, Style
 
-# Dictionary
+"""
+Dictionary
+"""
 word_choice = {
     'name': ['Ella', 'Max', 'Whiskers', 'Daisy', 'Sparkle',
              'Flash', 'Giggles', 'Bubbles', 'Snickers', 'Twinkle'],
